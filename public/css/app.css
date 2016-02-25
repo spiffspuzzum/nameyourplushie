@@ -1,0 +1,114 @@
+body{
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+	color: #eee;
+
+}
+
+h1{
+	margin: 25px 0 0;
+	padding: 0;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	margin: 10px 0 20px;
+	padding: 0;
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	color: #e09f7d;
+}
+
+p{
+	font-size: 1.4em;
+}
+
+.name{
+	margin: 20px 0;
+}
+
+/********
+Animated background images
+********/
+
+.background-images{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -9000;
+	font-size: 0;
+	width: 100%;
+}
+
+.img-col{
+	display: inline-block;
+	height: 125vh;
+}
+.img-col img{
+	width: 100%;
+	height: 125%;
+	margin-top: -150px;
+}
+
+.slide-narrow{
+	-webkit-animation: imgslide 40s linear infinite;
+	-moz-animation: imgslide 40s linear infinite;
+	width: 20%;
+}
+
+.slide-wide{
+	-webkit-animation: imgslide 17s linear infinite;
+	-moz-animation: imgslide 17s linear infinite;
+	width: 30%;
+}
+
+@-webkit-keyframes imgslide {
+ 	50% { transform: translateY(145px); }
+}
+
+/********
+Name your plushie circle
+********/
+
+.wrapper{
+	margin: 100px auto 0;
+	width: 500px;
+	height: 500px;
+	padding: 25px 25px;
+	background: rgb(160, 26, 125);
+  	background: -webkit-radial-gradient(circle, rgb(160, 26, 125), rgb(49,24,71)); /* Safari */
+  	background: -o-radial-gradient(circle, rgb(160, 26, 125), rgb(49,24,71)); /* Opera 11.6 to 12.0 */
+  	background: -moz-radial-gradient(circle, rgb(160, 26, 125), rgb(49,24,71)); /* Firefox 3.6 to 15 */
+  	background: radial-gradient(circle, rgb(160, 26, 125), rgb(49,24,71)); /* Standard syntax */
+	-webkit-box-shadow: 6px 6px 5px 0px rgba(49,24,71,0.4);
+	-moz-box-shadow: 6px 6px 5px 0px rgba(49,24,71,0.4);
+	box-shadow: 6px 6px 5px 0px rgba(49,24,71,0.4);
+	border-radius: 50%;
+}
+
+.slider{
+	width: 65%;
+	margin: 15px auto;
+}
+
+/*foundation overrides */
+.slider-handle {
+	background: #ef5d60;
+	border-radius: 50%;
+}
+.slider-handle:hover {
+	background: #ec4067;
+	border-radius: 50%;
+}
+.button {
+	margin: 15px 0 0;
+	background: #ef5d60;
+}
+.button:hover {
+	background: #ec4067;
+}
+
+.btn-wrapper {
+	margin: 0 auto;
+}

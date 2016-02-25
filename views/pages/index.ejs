@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+<body>
+  <div class="background-images">
+    <div id="col-1" class="img-col slide-narrow">
+      <img src="img/strip-1.jpg" alt="Pictures of cute animals">
+    </div>
+    <div id="col-2" class="img-col slide-wide">
+      <img src="img/strip-2.jpg" alt="Pictures of cute animals">
+    </div>
+      <div id="col-3" class="img-col slide-narrow">
+      <img src="img/strip-1.jpg" alt="Pictures of cute animals">
+    </div>
+     <div id="col-4" class="img-col slide-wide">
+      <img src="img/strip-4.jpg" alt="Pictures of cute animals">
+    </div>
+  </div>
+  <div class="wrapper">
+  <h1>Name Your Plushie</h1>
+    <div id="personality-select">
+      <h2>What is the temperment of your plushie?</h2>
+      <p>Twee or Uncouth</p>
+      <div class="slider" data-slider data-initial-start="5" data-end="10">
+        <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input id="twee-select" type="hidden">
+      </div>
+      <p>Pleasant or Surly</p>
+      <div class="slider" data-slider data-initial-start="5" data-end="10">
+        <span class="slider-handle"  data-slider-handle role="slider" tabindex="2"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input id="pleasant-select" type="hidden">
+      </div>
+      <p>Shy or Gregarious</p>
+      <div class="slider" data-slider data-initial-start="5" data-end="10">
+        <span class="slider-handle"  data-slider-handle role="slider" tabindex="3"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input id="shy-select" type="hidden">
+      </div>
+      <div class="btn-wrapper">
+        <button id="submit" type="button" class="large button">Submit</button>
+      </div>
+    </div>
+    <div id="display-names">
+      <div id="names-list"></div>
+      <div class="btn-wrapper">
+        <button id="try-again" type="button" class="large button">Try Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
